@@ -58,6 +58,21 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "04476f22-a632-4447-a0be-4d222027fdc9",
+        autoRegister: false, /* Set to true to automatically prompt visitors */
+        httpPermissionRequest: {
+          enable: true
+        },
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        }
+      }]);
+    </script>
+
   </head>
 
   <body id="page-top">
